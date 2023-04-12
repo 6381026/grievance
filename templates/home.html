@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+	<link
+  rel="stylesheet"
+  href="https://unpkg.com/@trevoreyre/autocomplete-js/dist/style.css"
+/>
     <style>
         @import url(https://fonts.googleapis.com/css?family=Sniglet|Raleway:900);
 
@@ -234,6 +238,14 @@ if($('#email').val() == "") {
 		
 });
     </script>
+	<div id="autocomplete" class="autocomplete">
+		<input class="autocomplete-input" />
+		<ul class="autocomplete-result-list"></ul>
+	  </div>
+	<script src="https://unpkg.com/@trevoreyre/autocomplete"></script>
+	<script>
+		new Autocomplete('#autocomplete', options)
+	</script>
 	<!-- {{ redirect_to_login_immediately }} -->
 </body>
 </html>
