@@ -334,12 +334,12 @@
 {% endfor %} -->
   <div class="cont">
     <div class="form sign-in">
-      <form action="" method="POST" name="myform" autocomplete="off">
+      <form action="" method="POST">
         {% csrf_token %}
       <h2>Sign In</h2>
       <label>
         <span>Username</span>
-        <input type="text" name="nam" list="mylist">
+        <input type="text" name="nam">
       </label>
       <label>
         <span>Password</span>
@@ -348,36 +348,6 @@
       <button class="submit" type="submit" name="s1" onclick="myalert()">Sign In</button>
       </form>
     </div>
-
-    <datalist id="mylist">
-      <option>Afghanistan</option>
-      <option>Åland Islands</option>
-      <option>Albania</option>
-      <option>Algeria</option>
-      <option>American Samoa</option>
-      <option>Andorra</option>
-      <option>Angola</option>
-      <option>Anguilla</option>
-      <option>Antarctica</option>
-      <option>Afghanistan</option>
-      <option>Åland Islands</option>
-      <option>Albania</option>
-      <option>Algeria</option>
-      <option>American Samoa</option>
-      <option>Andorra</option>
-      <option>Angola</option>
-      <option>Anguilla</option>
-      <option>Antarctica</option>
-      <option>Afghanistan</option>
-      <option>Åland Islands</option>
-      <option>Albania</option>
-      <option>Algeria</option>
-      <option>American Samoa</option>
-      <option>Andorra</option>
-      <option>Angola</option>
-      <option>Anguilla</option>
-      <option>Antarctica</option>
-    </datalist>
 
     <div class="sub-cont">
       <div class="img">
@@ -428,24 +398,7 @@
 </script>
 <script>
   function myalert() {
-    var name=document.myform.nam.value;
-    var pass=document.myform.password.value;
-    if(name=="" && pass=="")
-    {
-      alert("Username and Password may not be blank");
-    }
-    else if(name=="")
-    {
-      alert("Username may not be blank");
-    }
-    else if(pass=="")
-    {
-      alert("Password may not be blank");
-    }
-    else
-    {
       alert("Successfully Logged In");
-    }
   }
 </script>
 </body>

@@ -23,6 +23,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('app.urls')),
     path('',views.loginpage,name='loginpage'),
+    path('homepage/',views.homepage,name='homepage'),
+    path('replylogin/',views.replylogin,name='replylogin'),
 
     # url(r'^media/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}), 
     # url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
