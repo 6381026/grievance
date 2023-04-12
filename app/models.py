@@ -8,3 +8,13 @@ class box(models.Model):
    date = models.DateField()
    time = models.TimeField()
    toemail = models.CharField(max_length=255)
+
+   def __str__(self):
+      return self.name
+
+class suggestion(models.Model):
+   name = models.CharField(max_length=255)
+   email = models.CharField(max_length=255)
+
+   def __str__(self):
+      return self.name
